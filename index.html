@@ -7,7 +7,7 @@
 
 async function traerPais()
 {
-    const respuesta = await fetch("https://api.nationalize.io/?name=Julian");
+    const respuesta = await fetch("https://api.nationalize.io/?name=julian");
 
     if(!respuesta.OK)
     {
@@ -37,6 +37,5 @@ traerPais().then(mostrarNombre);
     <script type="text/javascript">
         mostrarMombre("Pancracio");
     </script>
-
 </body>
 </html>
