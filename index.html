@@ -9,13 +9,6 @@ async function traerPais()
 {
     const respuesta = await fetch("https://api.nationalize.io/?name=julian");
 
-    if(!respuesta.OK)
-    {
-        let oops = "404 no encontre nada";
-        alert(oops);
-        throw new Error(oops);
-    }
-
     const nombre = respuesta.json();
 
     return nombre;
