@@ -7,14 +7,14 @@
 
 async function traerPais()
 {
-    const respuesta = await fetch("https://api.nationalize.io/?name=Julian");
+    const respuesta = await fetch("https://api.nationalize.io/?name=Andres");
 
-    if(!respuesta.OK)
-    {
-        let oops = "404 no encontre nada";
-        alert(oops);
-        throw new Error(oops);
-    }
+    // if(!respuesta.OK)
+    // {
+    //     let oops = "404 no encontre nada";
+    //     alert(oops);
+    //     throw new Error(oops);
+    // }
 
     const nombre = respuesta.json();
 
